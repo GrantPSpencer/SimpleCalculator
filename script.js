@@ -51,11 +51,17 @@ function calculate() {
 
     // let value = Math.round((eval(formula.value) + Number.EPSILON) * 100) / 100;
 
-    let value = eval(formula.value);
-
-    if (!value) {
-        return false;
-    } else {
-        formula.value = value;
+    try {
+        let value = eval(formula.value);
+        if (!value) {
+            return false;
+        } else {
+            formula.value = value;
+        }
+    
+    } catch(error) {
+        formula.value = '';
+        alert('Please enter valid formula');
     }
-}
+    
+};
