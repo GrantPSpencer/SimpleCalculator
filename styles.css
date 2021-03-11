@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+
+#calculator {
+    display: inline-block;
+    text-align: center;
+    border: 15px solid rgba(220,220,220, 0.5);
+}
+
+#buttonscontainer {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.buttons {
+    font-size: 25px;
+    flex-shrink: 0;
+    flex-basis: 23.95%;
+    border: 1px solid black;
+}
+
+#zero {
+    flex-basis: 47.9%;
+}
+
